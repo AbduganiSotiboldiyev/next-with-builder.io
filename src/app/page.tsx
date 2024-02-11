@@ -1,11 +1,20 @@
-import AuthForm from './auth-form'
-import Image from 'next/image'
+// import AuthForm from './auth-form'
+// import Image from 'next/image'
+
+import AboutSection from "@/components/AboutSection";
+import Navbar from  "../components/Navbar";
+import RecentProjectsSection from "@/components/RecentProjectsSection";
+import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
   return (
     <>
       <div className="col-6 auth-widget">
-        <AuthForm />
+        {/* <AuthForm /> */}
+        <Navbar/>
+        <AboutSection/>
+        <RecentProjectsSection/>
+        <FooterSection/>
       </div>
 
       {/* <main className="flex min-h-screen flex-col items-center justify-between p-24">
